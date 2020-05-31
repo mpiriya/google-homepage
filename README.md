@@ -1,0 +1,1 @@
+The project's purpose is to practice basic HTML and CSS to recreate the Google homepage. 
