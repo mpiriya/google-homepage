@@ -1,3 +1,131 @@
+<style>
+    button {
+        background-color: transparent;
+        border: transparent;
+        color: rgb(75, 75, 75);
+    }
+
+    button:hover {
+        text-decoration: underline;
+    }
+
+    #search {
+        width: 464px;
+        height: 39px;
+        border-radius: 20px;
+        border-color:rgb(241, 241, 241)
+    }
+
+    img {
+        transform: scale(0.5);
+    }
+
+    #search:hover {
+        box-shadow: 0px 0px 2px rgb(50, 50, 50);
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        margin-top: -20px;
+        padding: 10px 15px 10px 15px;
+        background-color: rgb(241, 241, 241);
+        border: transparent;
+        color: rgb(75, 75, 75)
+    }
+
+    input[type="submit"]:hover {
+        color: rgb(50, 50, 50);
+        box-shadow: 0px 0px 2px rgb(50, 50, 50);
+    }
+
+    .centered {
+        display: flex;
+        justify-content: center;
+    }
+
+    #submit {
+        margin-right: 10px;
+    }
+
+    #about {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    #store {
+        position: absolute;
+        top: 20px;
+        left: 100px;
+    }
+
+    #gmail {
+        position: absolute;
+        top: 20px;
+        right: 200px;
+    }
+
+    #images {
+        position: absolute;
+        top: 20px;
+        right: 120px;
+    }
+
+    #sign-in {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo {
+        padding-top: 100px;
+        margin-bottom: -20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(241, 241, 241);
+        display: flex;
+    }
+
+    .footer-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    footer button {
+        padding: 0px 10px 0px 10px;
+    }
+</style>
+<head>
 <navbar>
     <button id="about">
         About
@@ -15,38 +143,43 @@
         Sign In
     </button>
 </navbar>
+</head>
+<body>
 <main>
-    <div>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    <div id="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
     </div>
     <form>
-        <input type="text">
-        <button id="search">
-            Google Search
-        </button>
-        <button id="search2">
-            I'm Feeling Lucky
-        </button>
+        <input type="search" id="search" name="search">
+        <br><br>
+        <div class="centered">
+            <input type="submit" id="submit" value="Google Search">
+            <input type="submit" id="submit2" value="I'm Feeling Lucky">
+        </div>
     </form>
 </main>
-
+</body>
 <footer>
-    <button>
-        Advertising
-    </button>
-    <button>
-        Business
-    </button>
-    <button>
-        How Search works
-    </button>
-    <button>
-        Privacy
-    </button>
-    <button>
-        Terms
-    </button>
-    <button>
-        Settings
-    </button>
+    <div class="footer-left">
+        <button>
+            Advertising
+        </button>
+        <button>
+            Business
+        </button>
+        <button>
+            How Search works
+        </button>
+    </div>
+    <div class="footer-right">
+        <button>
+            Privacy
+        </button>
+        <button>
+            Terms
+        </button>
+        <button>
+            Settings
+        </button>
+    </div>
 </footer>
